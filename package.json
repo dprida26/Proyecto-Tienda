@@ -1,0 +1,15 @@
+{
+  "name": "tienda-electrodomesticos-monorepo",
+  "version": "1.0.0",
+  "description": "Tienda Electrodomésticos - Monorepo",
+  "private": true,
+  "workspaces": [
+    "tienda-frontend"
+  ],
+  "scripts": {
+    "dev": "cd tienda-frontend && npm run dev",
+    "build": "cd tienda-frontend && npm run build",
+    "start": "cd tienda-frontend && npm start",
+    "lint": "cd tienda-frontend && npm run lint"
+  }
+}

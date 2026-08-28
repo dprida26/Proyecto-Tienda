@@ -1,0 +1,14 @@
+Triggering new build in Render
+Timestamp: 2026-08-28 01:30 UTC
+Build Configuration:
+- Node.js v24+
+- package.json: root + tienda-frontend workspaces
+- buildCommand: npm ci --legacy-peer-deps && npm run build
+- startCommand: npm start
+
+Expected behavior:
+1. npm ci installs all dependencies including tailwindcss
+2. npm run build compiles Next.js
+3. npm start runs the server on port 3000
+
+If this build succeeds, the app should be live at the URL shown in Render dashboard.

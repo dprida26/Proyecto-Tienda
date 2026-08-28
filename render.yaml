@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: tienda-frontend
+    runtime: node
+    buildCommand: ls -la && pwd
+    startCommand: cd tienda-frontend && npm start
+    rootDir: ./
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_API_URL
+        value: https://api.example.com/api/v1
+      - key: NODE_OPTIONS
+        value: --max-old-space-size=2048
