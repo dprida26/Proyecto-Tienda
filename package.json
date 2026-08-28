@@ -11,5 +11,8 @@
     "build": "cd tienda-frontend && npm run build",
     "start": "cd tienda-frontend && npm start",
     "lint": "cd tienda-frontend && npm run lint"
+  },
+  "dependencies": {
+    "next": "^15.0.0"
   }
 }
